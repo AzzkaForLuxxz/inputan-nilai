@@ -1,0 +1,24 @@
+def cek_predikat():
+    print("=== Program Inputan Nilai ===")
+    try:
+        nilai = float(input("Masukkan nilai (0 - 100): "))
+        
+        if nilai > 90:
+            predikat = "A"
+        elif nilai > 80:
+            predikat = "B"
+        elif nilai > 70:
+            predikat = "C"
+        else:
+            predikat = "D"
+
+        print(f"Nilai Anda: {nilai}")
+        print(f"Predikat: {predikat}")
+
+    except ValueError:
+        print("Input tidak valid! Harap masukkan angka.")
+        
+    input("\nTekan Enter untuk keluar...")
+
+if __name__ == "__main__":
+    cek_predikat()
